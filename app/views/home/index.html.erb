@@ -10,7 +10,9 @@
                 <h5 class="card-title"><%= product.name %></h5>
                 <div class="card-text">
                   <div class="badge badge-primary"><%= product.categories.first.name %></div>
-                  <div>$<%= product.price %></div>
+                  <div>$<%= product.variations.first.price %></div>
+                  <div><%= product.variations.first.color.name %></div>
+                  <div><%= product.variations.first.size.name %></div>
                 </div>
                 <div class="row float-right">
                   <div class="col-md-12">
